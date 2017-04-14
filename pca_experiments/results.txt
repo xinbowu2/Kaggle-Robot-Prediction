@@ -1,0 +1,49 @@
+In this experiments, only take valid numerical and binary values into account
+
+remove following: 
+	row: 1
+	column: 1,2,3,4
+note: for transformed dataset. column 3 -> 1, other columns move left by 4
+
+Results: 
+1. all:						0 principle components returned
+
+2. 1-73(binary) 			73 principle components returned
+(5-77)
+see coeff_pca2.csv
+
+3. 74-397(numerical): 		0 principle components returned
+(78-401)
+
+4. 398-end(binary): 		10 principle components returned
+(402-end)
+see coeff_pca4.csv
+
+
+5. 1-73 + 398-end(binary):  83 principle components returned
+(5-77)and(402-end)
+see coeff_pca5.csv
+
+Reduced dataset: 
+
+1. Reduce to only 1/2 num of dimensions by 1/2 num of most important principle conponents
+
+		#dimensions 		source	
+new12: 		36(73)  		trans_data12.csv
+new13: 		5(10)			trans_data14.csv
+new13: 		42(83)			trans_data15.csv
+
+2. Reduce to only 1/3 num of dimensions by 1/3 num of most important principle conponents
+
+		#dimensions 		source	
+new22: 		24(73)  		trans_data22.csv
+new23: 		3(10)			trans_data24.csv
+new23: 		28(83)			trans_data25.csv
+
+2. Reduce to only 1/5 num of dimensions by 1/5 num of most important principle conponents
+
+		#dimensions 		source	
+new32: 		14(73)  		trans_data32.csv
+new33: 		2(10)			trans_data34.csv
+new33: 		16(83)			trans_data35.csv
+

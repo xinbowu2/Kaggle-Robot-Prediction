@@ -1,0 +1,8 @@
+Use Voting Classifier to combine three classfiers. 
+1. RondomForest : 0.92933
+2. RondomForest + Logistic Regression + AbaBoost Soft Voting : 90.7772
+3. RondomForest + SVC + AbaBoost Soft Voting : 0.93380
+4. 1RondomForest + 2SVC + 1AbaBoost Soft Voting : 0.93531
+5. 2RondomForest + 1SVC + 1AbaBoost Soft Voting : 0.93479	
+6. 2RondomForest + 3SVC + 1AbaBoost Soft Voting : 0.93432
+7. GridSearchCV  2RondomForest [500, 1000] + 2SVC + 1AbaBoost [100, 200] Soft Voting : 0.93536
